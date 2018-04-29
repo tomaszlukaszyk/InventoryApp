@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <TextView
+        style="@style/DetailUpperTextStyle"
+        android:text="@string/title_of_the_book" />
+
+    <TextView
+        android:id="@+id/detail_title"
+        style="@style/DetailLowerTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_small"
+        tools:text="The Shining" />
+
+    <TextView
+        style="@style/DetailUpperTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_large"
+        android:text="@string/price_of_one_copy" />
+
+    <TextView
+        android:id="@+id/details_price"
+        style="@style/DetailLowerTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_small"
+        tools:text="7$" />
+
+    <TextView
+        style="@style/DetailUpperTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_large"
+        android:text="@string/number_of_copies_in_stock" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/details_stock"
+            style="@style/DetailLowerTextStyle"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/details_spacing_large"
+            android:paddingRight="@dimen/details_spacing_large"
+            tools:text="1" />
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAppearance="?android:textAppearanceLarge" />
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/DetailUpperTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_large"
+        android:text="@string/name_of_the_supplier" />
+
+    <TextView
+        android:id="@+id/details_supplier"
+        style="@style/DetailLowerTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_small"
+        tools:text="Anchor" />
+
+    <TextView
+        style="@style/DetailUpperTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_large"
+        android:text="@string/phone_number_of_the_supplier" />
+
+    <TextView
+        android:id="@+id/details_phone"
+        style="@style/DetailLowerTextStyle"
+        android:layout_marginTop="@dimen/details_spacing_small"
+        tools:text="(212) 940-7390" />
+
+</LinearLayout>

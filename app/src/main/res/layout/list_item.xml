@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="102dp">
+
+    <LinearLayout
+        android:id="@+id/in_stock"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_margin="16dp"
+        android:background="@color/quantity_out"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/in_stock"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/list_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            tools:text="10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/sale_button"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="3"
+        android:textColor="@color/text_dark"
+        tools:text="Long placeholder title of the boook that should wrap to more than two lines of text" />
+
+    <TextView
+        android:id="@+id/list_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/sale_button"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_light"
+        tools:text="Price: $7" />
+
+    <Button
+        android:id="@+id/sale_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/in_stock"
+        android:focusable="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/sale_button"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/text_dark" />
+
+</RelativeLayout>
